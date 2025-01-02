@@ -15,7 +15,7 @@ function openCity(evt, cityName) {
 
 function startConnect() {
     clientID = "client_ind" + parseInt(Math.random() * 100);
-    host = "104.248.156.51";
+    host = "###.##.###.###";
     port = "9001";
     client = new Paho.MQTT.Client(host, Number(port), clientID);
     client.onConnectionLost = onConnectionLost;
@@ -23,8 +23,8 @@ function startConnect() {
 
     client.connect({
         onSuccess: onConnect,
-        userName: 'ali',
-        password: '1234'
+        userName: '###',
+        password: '####'
     });
 
 }
